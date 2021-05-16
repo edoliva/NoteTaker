@@ -8,8 +8,8 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // ROUTER
-require('./routes/apiRoutes')(app);
-require('./routes/htmlRoutes')(app);
+require('./Routes/apiRoutes')(app);
+require('./Routes/htmlRoutes')(app);
 
 // LISTENER
 app.listen(PORT, () => {
