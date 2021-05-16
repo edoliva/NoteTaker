@@ -20,6 +20,18 @@ module.exports = (app) => {
         err ? console.error(err) : res.json({msg:"Note added."}))
     });
 
-    
+    //handle delete request at /api/notes/:deleteid
+    // id value is in deleteid param
+    for (var i=0; i<=data.length-1; i++) {
+       for (key of obj) {
+        if (key="id") {
+            if (obj[key] === deleteid) {
+                data.splice(i, 1)
+            }
+        } 
+        }
+    }
+    fs.writeFile('./db/db.json', JSON.stringify(data, null, "\t"), (err) =>
+    err ? console.error(err) : res.json({msg:"Note deleted."}))
 
 }
