@@ -14,7 +14,7 @@ This application was created so a user could easily notes, view the notes, then 
 - [License](#license)
 ## Installation
 Clone or download this repository on GitHub: https://github.com/edoliva/NoteTaker
-Deployed test link: https://git.heroku.com/safe-falls-02568.git
+Deployed Horoku link: https://safe-falls-02568.herokuapp.com/
 ## Criteria
 - The user can enter their note information on the deployed link. If the need to view past notes or delete thet can use the icon buttons. 
 ## Usage/coding:
